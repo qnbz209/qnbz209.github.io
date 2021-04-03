@@ -51,20 +51,20 @@ JPA
 
 ORM(Object Relational Mapping)으로, 자바객체와 관계형 데이터베이스의 맵핑을 통해 보다 손쉽게 객체지향을 활용할 수 있도록 도와주는 도구이다.
 
-* Entity
+### Entity
 
-** Camel Case: 단어의 시작을 소문자로, 띄워쓰기 대신 대문자를 사용함으로써 단어를 구분해 Java의 변수를 선언할 때 사용된다.
-** Snake Case: 단어를 모두 소문자로 표기하면서, 띄워쓰기 때신 '_'를 사용해 데이터베이스의 컬럼에 사용된다.
+* Camel Case: 단어의 시작을 소문자로, 띄워쓰기 대신 대문자를 사용함으로써 단어를 구분해 Java의 변수를 선언할 때 사용된다.
+* Snake Case: 단어를 모두 소문자로 표기하면서, 띄워쓰기 때신 '_'를 사용해 데이터베이스의 컬럼에 사용된다.
 
 e.g.
-** @Entity: 해당 class가 entity임을 명시
-** @Table: 실제 DB 테이블의 이름을 명시
-** @Id: Index primary key를 명시
-** @Column: 실제 DB Column의 이름을 명시
-** @GeneratedValue: Primary key 식별키의 전략 설정
+* @Entity: 해당 class가 entity임을 명시
+* @Table: 실제 DB 테이블의 이름을 명시
+* @Id: Index primary key를 명시
+* @Column: 실제 DB Column의 이름을 명시
+* @GeneratedValue: Primary key 식별키의 전략 설정
 
 
-* Repository
+### Repository
 따로 쿼리문을 작성하지 않아도 CRUD를 사용할 수 있게 한다.
 
 ```
@@ -76,11 +76,12 @@ public interface UserRepository extends JpaRepository<User, Long> {
 }
 ```
 
-* ERD
+### ERD
 테이블들간의 상호간의 관계를 정의할 때 사용된다.
 
-** @OneToOne
-** @OneToMany
-** @ManyToOne
-** @ManyToMany
+e.g.
+* @OneToOne
+* @OneToMany
+* @ManyToOne
+* @ManyToMany
 
