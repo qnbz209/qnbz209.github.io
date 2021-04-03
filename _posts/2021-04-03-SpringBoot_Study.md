@@ -22,18 +22,18 @@ HTTP 프로토콜에 있는 메소드를 활용한 아키텍쳐 스타일이다.
 HTTP 메소드를 이용해 CRUD의 개념으로 resource를 처리하기 위해 사용된다.
 
 * HTTP - GET Method
-** 정보를 얻을 때 사용하는 메소드로 주소 창에 파라미터가 노출된다. 브라우저가 주소 캐시를 할 수 있다.
-** e.g. http://localhost:8080/search?id=account&password=1234
+- 정보를 얻을 때 사용하는 메소드로 주소 창에 파라미터가 노출된다. 브라우저가 주소 캐시를 할 수 있다.
+- e.g. http://localhost:8080/search?id=account&password=1234
 
 * HTTP - POST Method
-** 클라이언트에서 서버로 데이터를 전송할 때 사용되는 메소드로 주소 창에 파라미터가 노출되지 않아 주소 길이 제한이 없다. 브라우저가 주소 캐시를 하지 못한다.
-** e.g. http://localhost:8080/search
+- 클라이언트에서 서버로 데이터를 전송할 때 사용되는 메소드로 주소 창에 파라미터가 노출되지 않아 주소 길이 제한이 없다. 브라우저가 주소 캐시를 하지 못한다.
+- e.g. http://localhost:8080/search
 
 * HTTP - PUT/PATCH Method
-** POST 메소드와 마찬기자로 BODY에 데이터가 들어 있으며, 주로 update를 위해 사용된다.
+- POST 메소드와 마찬기자로 BODY에 데이터가 들어 있으며, 주로 update를 위해 사용된다.
 
 * HTTP - PUT/PATCH Method
-** GET 메소드와 마찬가지로 주소에 파라미터가 들어가며, 데이터를 삭제할 때에 사용된다.
+- GET 메소드와 마찬가지로 주소에 파라미터가 들어가며, 데이터를 삭제할 때에 사용된다.
 
 
 Lombok
@@ -48,8 +48,8 @@ e.g.
 * @Builder: 빌더 패턴을 사용할때 사용
 * @Accessors(chain = true): 체이닝 패턴을 사용할때 사용
 * @Data
-** @ToString, @EqualsAndHashCode, @Getter, @Setter, @RequiredArgsConstructor 모두 포함
-** JPA 에서 OneToMany, ManyToOne 같은 부분에 사용하면 toString()에서 문제 발생 @Exclude를 사용해서 제외 하거나 다른 방법으로 설정
+- @ToString, @EqualsAndHashCode, @Getter, @Setter, @RequiredArgsConstructor 모두 포함
+- JPA 에서 OneToMany, ManyToOne 같은 부분에 사용하면 toString()에서 문제 발생 @Exclude를 사용해서 제외 하거나 다른 방법으로 설정
 
 JPA
 ------
